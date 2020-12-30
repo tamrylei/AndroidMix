@@ -4,6 +4,8 @@
 
 [RxTool-2.6.2](https://github.com/Tamsiree/RxTool/tree/v2.6.2)
 
+[Banner-2.1.0](https://github.com/youth5201314/banner/tree/master)
+
 ## 使用说明：
 
 ### Step 1.先在 build.gradle(Project:XXXX) 的 repositories 添加:
