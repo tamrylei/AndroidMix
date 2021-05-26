@@ -21,15 +21,6 @@
     <application
         android:allowBackup="true"
         android:supportsRtl="true">
-        <activity
-            android:name=".activity.ActivityCrash"
-            android:process=":error_activity" />
-
-        <provider
-            android:name="com.tamsiree.rxkit.crash.TCrashProvider"
-            android:authorities="${applicationId}.tcrashprovider"
-            android:exported="false"
-            android:initOrder="101" />
 
         <provider
             android:name="androidx.core.content.FileProvider"

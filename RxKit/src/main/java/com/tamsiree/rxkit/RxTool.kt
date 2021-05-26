@@ -14,7 +14,6 @@ import android.widget.EditText
 import android.widget.ListView
 import android.widget.TextView
 import com.tamsiree.rxkit.RxVibrateTool.vibrateOnce
-import com.tamsiree.rxkit.crash.TCrashProfile
 import com.tamsiree.rxkit.interfaces.OnDoListener
 import com.tamsiree.rxkit.interfaces.OnSimpleListener
 import com.tamsiree.rxkit.view.RxToast.normal
@@ -56,7 +55,6 @@ object RxTool {
     @JvmStatic
     fun init(context: Context): RxTool {
         RxTool.context = context.applicationContext
-        //        TCrashTool.init(context);
         TLog.init(context)
         return RxTool
     }
@@ -90,10 +88,6 @@ object RxTool {
     fun crashLogFile(switch: Boolean): RxTool {
         TLog.switchCrashFile(switch)
         return RxTool
-    }
-
-    fun crashProfile(): TCrashProfile.Builder {
-        return TCrashProfile.Builder.create()
     }
 
     //----------------------------------------------------------------------------------------------延时任务封装 start
